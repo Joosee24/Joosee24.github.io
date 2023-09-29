@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="fa-brands fa-html5" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7084936aca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <header>
         <nav>
           <p>Jose Antonio</p>
-          <ul>
-            <li><a href="#beranda">home</a></li>
-            <li><a href="#bagian2">about</a></li>
-            <li><a href="#list">skill</a></li>
-            <li><a href="#project">project</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
+          <div class="toggle">
+            <ul>
+              <li><a href="#beranda">home</a></li>
+              <li><a href="#bagian2">about</a></li>
+              <li><a href="#list">skill</a></li>
+              <li><a href="#project">project</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label"></label>
+            <div class="mode">
+              <i class="fas fa-moon"></i>
+            </div>
+            <script src="script.js"></script>
+          </div>
         </nav>
       </header>
       <section id="beranda">
+        <div class="wrapper">
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+        </div>
         <div class="home">
           <h1>Hello My Name is Jose</h1>
           <h2>I'am Student|Web Develop</h2>
@@ -29,7 +58,6 @@
             <a href="contact.html">Media Social</a>
           </div>
         </div>
-
         <div class="image">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7e2d-J6FfkxOJl1-QAz7McS5d_rxBLFfUQQ&usqp=CAU"
@@ -56,7 +84,7 @@
         <h3>Skill</h3>
       </div>
       <section id="skill">
-        <div class="box1">
+        <div class="box">
           <h3>HTML</h3>
           <p>
             HTML adalah untuk menyusun bagian paragraf, heading, maupun link
@@ -64,7 +92,7 @@
             diketahui bahwa HTML bukanlah bahasa pemrograman.
           </p>
         </div>
-        <div class="box2">
+        <div class="box">
           <h3>CSS</h3>
           <p>
             CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk
@@ -73,7 +101,7 @@
             di situs.
           </p>
         </div>
-        <div class="box3">
+        <div class="box">
           <h3>PYTHON</h3>
           <p>
             Python merupakan bahasa pemrograman komputer yang biasa dipakai
@@ -152,6 +180,33 @@
           }
         </script>
       </section>
+      <div class="asset">
+        <div class="position">
+          <div class="scr">
+            <div class="content">
+              <h4>Login form Instagram</h4>
+              <p>
+                project membuat login form Instagram hanya dengan menggunakan
+                html dan css
+              </p>
+            </div>
+          </div>
+          <img src="/asset/Screenshot (62).png" />
+        </div>
+
+        <div class="position">
+          <div class="scr">
+            <div class="content">
+              <h4>Login form Facebook</h4>
+              <p>
+                project membuat login form Facebook hanya dengan menggunakan
+                html dan css
+              </p>
+            </div>
+          </div>
+          <img src="/asset/Screenshot (63).png" />
+        </div>
+      </div>
       <section id="contact">
         <span>Contact Me</span>
         <div class="label">
