@@ -144,7 +144,6 @@ div .dot {
   height: 10px;
   width: 10px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 20%;
   right: 20%;
@@ -748,4 +747,16 @@ h1::after {
 .asset .position:hover .content {
   opacity: 1;
   transform: translateX(0);
+}
+
+.reveal {
+  position: relative;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
 }

@@ -79,108 +79,112 @@
           />
         </div>
       </section>
-
-      <div id="list">
-        <h3>Skill</h3>
+      <div class="reveal">
+        <div id="list">
+          <h3>Skill</h3>
+        </div>
+        <section id="skill">
+          <div class="box">
+            <h3>HTML</h3>
+            <p>
+              HTML adalah untuk menyusun bagian paragraf, heading, maupun link
+              pada halaman web. Tapi, meskipun susunannya seperti coding, perlu
+              diketahui bahwa HTML bukanlah bahasa pemrograman.
+            </p>
+          </div>
+          <div class="box">
+            <h3>CSS</h3>
+            <p>
+              CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan
+              untuk mengatur tampilan elemen yang tertulis dalam bahasa markup,
+              seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan
+              visualnya di situs.
+            </p>
+          </div>
+          <div class="box">
+            <h3>PYTHON</h3>
+            <p>
+              Python merupakan bahasa pemrograman komputer yang biasa dipakai
+              untuk membangun situs, software/aplikasi, mengotomatiskan tugas
+              dan melakukan analisis data. Bahasa pemrograman ini termasuk
+              bahasa tujuan umum. Artinya, ia bisa digunakan untuk membuat
+              berbagai program berbeda, bukan khusus untuk masalah tertentu
+              saja.
+            </p>
+          </div>
+        </section>
       </div>
-      <section id="skill">
-        <div class="box">
-          <h3>HTML</h3>
-          <p>
-            HTML adalah untuk menyusun bagian paragraf, heading, maupun link
-            pada halaman web. Tapi, meskipun susunannya seperti coding, perlu
-            diketahui bahwa HTML bukanlah bahasa pemrograman.
-          </p>
+      <div class="reveal">
+        <div class="view">
+          <h3>Project</h3>
         </div>
-        <div class="box">
-          <h3>CSS</h3>
-          <p>
-            CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk
-            mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti
-            HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya
-            di situs.
-          </p>
-        </div>
-        <div class="box">
-          <h3>PYTHON</h3>
-          <p>
-            Python merupakan bahasa pemrograman komputer yang biasa dipakai
-            untuk membangun situs, software/aplikasi, mengotomatiskan tugas dan
-            melakukan analisis data. Bahasa pemrograman ini termasuk bahasa
-            tujuan umum. Artinya, ia bisa digunakan untuk membuat berbagai
-            program berbeda, bukan khusus untuk masalah tertentu saja.
-          </p>
-        </div>
-      </section>
-      <div class="view">
-        <h3>Project</h3>
+        <section id="project">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/asset/Screenshot (57).png" />
+              <div class="text">slide</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/asset/Screenshot (59).png" />
+              <div class="text">slide</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/asset/Screenshot (60).png" />
+              <div class="text">slide</div>
+            </div>
+            <div class="container">
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+        </section>
       </div>
-      <section id="project">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="/asset/Screenshot (57).png" />
-            <div class="text">slide</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="/asset/Screenshot (59).png" />
-            <div class="text">slide</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="/asset/Screenshot (60).png" />
-            <div class="text">slide</div>
-          </div>
-          <div class="container">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
-        </script>
-      </section>
-      <div class="asset">
+      <div class="asset reveal">
         <div class="position">
           <div class="scr">
             <div class="content">
@@ -207,19 +211,21 @@
           <img src="/asset/Screenshot (63).png" />
         </div>
       </div>
-      <section id="contact">
-        <span>Contact Me</span>
-        <div class="label">
-          <label>Email</label>
-          <input type="email" name="email" placeholder="jose@gmail.com" />
-          <label>Name</label>
-          <input type="Name" name="name" placeholder="Your Name" />
-          <label>Subject</label>
-          <textarea rows="5" cols="50" name="comment" form="usrform">
-          </textarea>
-          <button class="submit">Submit</button>
-        </div>
-      </section>
+      <div class="reveal">
+        <section id="contact">
+          <span>Contact Me</span>
+          <div class="label">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="jose@gmail.com" />
+            <label>Name</label>
+            <input type="Name" name="name" placeholder="Your Name" />
+            <label>Subject</label>
+            <textarea rows="5" cols="50" name="comment" form="usrform">
+            </textarea>
+            <button class="submit">Submit</button>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
